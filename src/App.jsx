@@ -8,9 +8,6 @@ const App = () => {
       <div>
         <SearchFilter />
       </div>
-      <div>
-        <Card />
-      </div>
     </>
   );
 };
