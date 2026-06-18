@@ -38,12 +38,14 @@ const SearchFilter = () => {
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               placeholder="Search your favorite shoe..."
-              className="border-2 border-gray-600 w-80 md:w-160 lg:w-180 xl:190 p-2 rounded-2xl bg-gray-800 text-white placeholder-gray-400 mb-6 focus:outline-none focus:border-blue-500"
+              className="border-2 border-gray-600 w-80 md:w-160 lg:w-180 xl:190 p-2 rounded-2xl bg-gray-800 text-white placeholder-gray-400 mb-6 focus:outline-none focus:border-blue-500 overflow-hidden"
               // 2. Yahan value aur onChange set karo
             />
             {searchTerm.length > 0 && (
               <div className="border p-4 rounded-xl  bg-gray-800 w-80 md:w-160 lg:w-180 xl:190">
-                <p className="text-white-400 mb-2"> {searchTerm}</p>
+                <p className="text-white-400 mb-2 text-sm px-2 break-all">
+                  {searchTerm}
+                </p>
                 <ul>
                   {/* abhi ke liye sirf demo ke liye first shoe ka dekhenge
         <li>{itemsList[0]}</li> */}
@@ -53,7 +55,7 @@ const SearchFilter = () => {
                       <li
                         onClick={() => setSelectShoes(item)}
                         key={index}
-                        className="p-2 cursor-pointer text-left hover:text-blue-400  border-gray-600 last:border-none transition-colors "
+                        className="p-2 cursor-pointer truncate text-col text-left hover:text-blue-400  border-gray-600 last:border-none transition-colors "
                       >
                         {item} {/* list box yaha sare box dikhenge */}
                       </li>
