@@ -18,7 +18,7 @@ const SearchFilter = () => {
     },
     {
       id: 2,
-      productName: "Adidas Ultraboost",
+      productName: "Puma Ultraboost",
       price: 7200,
       image:
         "https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=80",
@@ -32,7 +32,7 @@ const SearchFilter = () => {
     },
     {
       id: 4,
-      productName: "Reebok classic..",
+      productName: "Air classic..",
       price: 4100,
       image:
         "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&q=80",
