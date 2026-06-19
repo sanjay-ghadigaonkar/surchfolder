@@ -1,6 +1,6 @@
 # Project : shoe finder app
 
-# Feachers Live search and filtering instantly filters the shoes dropdoen list
+# Feachers Live search and filtering instantly filters the shoes dropdown list
 
 # Smart search case insansitive and partial matching (e.typing "Pro" or "Nike " instanty finde shoes like a( nike max pro) )
 
