@@ -5,7 +5,7 @@ const Card = ({ GoBack, shoesData }) => {
     // 1. Main Container: Mobile par column, lg par row (side-by-side). Width screen ke hisaab se badhegi.
     <div className="flex flex-col lg:flex-row items-center lg:items-stretch bg-gray-800 border border-gray-700 p-5 sm:p-6 md:p-8 rounded-3xl shadow-2xl w-[90%] max-w-sm md:max-w-md lg:max-w-4xl xl:max-w-5xl mx-auto transition-all duration-300">
       {/* 2. Image Section: lg screen par ye left side ka 50% hissa lega */}
-      <div className="w-full lg:w-1/2 h-56 md:h-72 lg:h-auto min-h-14rem lg:min-h-24rem bg-white rounded-2xl overflow-hidden mb-6 lg:mb-0 border border-gray-600 shadow-inner flex-shrink-0">
+      <div className="w-full lg:w-1/2 h-56 md:h-72 lg:h-auto   bg-white rounded-2xl overflow-hidden mb-6 lg:mb-0 border border-gray-600 shadow-inner flex-shrink-0">
         <img
           src={shoesData.image}
           alt={shoesData.productName}
