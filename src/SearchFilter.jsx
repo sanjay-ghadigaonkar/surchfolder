@@ -90,7 +90,6 @@ const SearchFilter = () => {
                 onChange={(e) => setSearchTerm(e.target.value)}
                 onKeyDown={(e) => e.key === "Enter" && handleSearch()}
                 placeholder="Search your favorite shoe..."
-                // FIX: Invalid tailwind classes (w-160, etc.) hata kar w-full kiya hai
                 className="w-full border border-gray-600 p-4 pr-12 rounded-2xl bg-gray-800 text-white placeholder-gray-400 focus:outline-none focus:border-blue-500 shadow-md text-lg transition-colors"
               />
               <button
@@ -115,7 +114,7 @@ const SearchFilter = () => {
                       <li
                         onClick={() => {
                           setSelectShoes(item);
-                          setSearchTerm(""); // Search clear karna acchi UX practice hai
+                          setSearchTerm(""); // Search clear karna
                         }}
                         key={item.id}
                         className="px-4 py-3 cursor-pointer truncate text-left hover:bg-gray-700 hover:text-blue-400 border-b border-gray-700 last:border-none transition-colors"
@@ -124,7 +123,6 @@ const SearchFilter = () => {
                       </li>
                     ))
                   ) : (
-                    // FIX: Typos (text-cente) fix kiye
                     <li className="p-4 text-red-400 font-semibold text-center">
                       No Shoes Found
                     </li>
